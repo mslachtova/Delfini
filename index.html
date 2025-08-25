@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delfini</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e3f2fd;
+    }
+
+    /* Hero sekce */
+    .hero {
+      position: relative;
+      background: #f0f8ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 70vh;
+      padding: 3rem 1rem;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, #a0d8ff 20%, transparent 20%),
+        radial-gradient(circle, #a0d8ff 20%, transparent 20%);
+      background-position: 0 0, 50px 50px;
+      background-size: 100px 100px;
+      opacity: 0.1;
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      background: white;
+      padding: 2rem 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 700px;
+      width: 100%;
+    }
+
+    .hero-content img {
+      height: 80px;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-content h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-content h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-content p.lead {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-content p.text-primary {
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Hero sekce -->
+  <header class="hero">
+    <div class="hero-content text-center">
+      <img src="logo.svg" alt="Delfini logo">
+      <h1>Delfini</h1>
+      <p class="lead text-secondary">Prostor pro peer-to-peer vzdělávání</p>
+      <h2>
+        Společně. Vzájemně. Efektivně.
+      </h2>
+      <p class="text-primary">
+        Hledáme testery pro online konverzace v angličtině
+        v období od 15.&#8239;9. do 5.&#8239;10.!
+      </p>
+      <a href="#testovani" class="btn btn-primary">👉 Chci se přidat</a>
+    </div>
+  </header>
+
+  <!-- O projektu -->
+  <section id="projekt" class="container py-3">
+    <h2 class="text-center mb-4">🐬 O projektu</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card shadow-sm border-0 mb-4">
+          <div class="card-body">
+            <p class="card-text">
+              Delfini je projekt, který ukazuje, že <strong>učení nemusí být osamělá cesta</strong>.
+              Věříme, že lidé se učí <strong>efektivněji a s větší motivací</strong>,
+              když se učí společně – ať už s parťákem, doučovatelem nebo ve skupině.
+            </p>
+            <p>
+              Chceme vytvořit prostředí, kde si uživatelé mohou <strong>vzájemně pomáhat</strong>,
+              <strong>sdílet zkušenosti</strong> a <strong>společně růst</strong>.
+              Náš projekt staví na <strong>nástrojích pro snadnější a efektivnější společné učení</strong>.
+            </p>
+            </p>
+            <button class="btn btn-outline-primary toggle-btn" type="button" data-bs-toggle="collapse"
+              data-bs-target="#projektDetail" aria-expanded="false">
+              ℹ️ Chci vědět více
+            </button>
+
+            <div class="collapse mt-3" id="projektDetail">
+              <p>
+                Delfini je projekt, jehož dlouhodobým záměrem je pomáhat s&nbsp;učením tam, kde studenti narážejí na
+                překážky – když je látka nesrozumitelná, chybí důležité informace nebo nejsou dobré
+                podmínky, jako dostatečná podpora v&nbsp;okolí nebo vhodné nástroje.
+              </p>
+              <p>
+                Naším cílem je učinit vzdělávání přístupnějším a napomoci efektivnějšímu učení. Chceme toho dosáhnout
+                prostřednictvím:
+                <ul>
+                  <li><strong>Propojování lidí</strong> – aby si studenti mohli navzájem pomáhat a nacházet studijní parťáky nebo doučovatele.</li>
+                  <li><strong>Lepšího sdílení informací</strong> – usnadněním přístupu k&nbsp;výukovým materiálům a zkušenostem ostatních.</li>
+                  <li><strong>Podpory efektivního učení</strong> – poskytnutím nástrojů a metod, které pomohou s&nbsp;pochopením a osvojením látky.</li>
+                </ul>                
+              </p>
+              <p><strong>Kde jsme nyní</strong></p>
+              <p>
+                Momentálně jsme ve fázi testování konkrétních forem společného učení s&nbsp;podporou umělé inteligence.
+                Naše první příklady aktivit jsou konverzace v&nbsp;angličtině a párové programování v&nbsp;zazyce Python.
+                S&nbsp;pomocí testerů chceme pochopit, <strong>jak nejlépe tyto aktivity nastavit pro efektivní a motivující učení</strong>.
+              </p>
+              <p><strong>Kam směřujeme</strong></p>
+              <p>
+                Naším snem je vytvořit platformu, která umožní snadné propojení lidí se společným zájmem o vzdělávání.
+                Chceme také podpořit vzájemnou výuku mezi vrstevníky, která může přinést bližší přístup,
+                zvýšit motivaci k&nbsp;učení a posílit sebevědomí ve vlastní schopnosti. Proto také plánujeme
+                připravit nástroje, které usnadní efektivní učení a sdílení materiálů.
+              </p>
+              <p>
+                Delfini bude vždy nabízet volně přístupnou síť, kde si lidé mohou pomáhat.
+                Do budoucna ale chceme rozšířit možnosti i o prémiové funkce, které usnadní učení a umožní
+                aktivním členům komunity najít si příležitosti k&nbsp;přivýdělku. Cílem monetizace je udržitelnost
+                i dostupnost.
+              </p>
+              <p><strong>Proč název Delfini?</strong></p>
+              <p>
+                Název Delfini vychází z řeckého slova pro delfína. Řečtina proto, že Řecko je kolébkou vzdělávání
+                v&nbsp;Evropě. A delfín? To je jedno z nejinteligentnějších zvířat na naší planetě.
+                Zajímavé je, že delfíni, kteří se něco naučí v zajetí, jsou schopni toto poznání předat ostatním
+                v&nbsp;přírodě – a právě v tom vidíme podobnost s &nbsp;yšlenkou peer-to-peer vzdělávání,
+                na které náš projekt staví. Navíc se delfíni rádi učí hrou a zároveň blbnou, podobně jako my lidé :D
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testování -->
+  <section id="testovani" class="container py-3">
+    <h2 class="text-center mb-4">📝 Testování</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card shadow-sm border-0 mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Online konverzace v angličtině</h5>
+            <p class="card-text">
+              Chceš se <strong>rozmluvit v angličtině</strong>, získat
+              <strong>zpětnou vazbu na svůj projev</strong> a pomoci nám
+              <strong>vyladit novou vzdělávací službu</strong>?
+            </p>
+            <p>Přidej se k testování a vyzkoušej to na vlastní kůži!</p>
+            <p class="card-text">
+              <strong>Kdy:</strong> 15.&#8239;9.–5.&#8239;10. (3 kola, max. 20 minut 1× týdně)<br>
+              <strong>Kde:</strong> online, z pohodlí domova<br>
+              <strong>Přihlášky:</strong> do pátku 12.&nbsp;9. včetně
+            </p>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <button class="btn btn-outline-primary toggle-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#anglictinaDetail" aria-expanded="false">
+                ℹ️ Chci vědět více
+              </button>
+
+              <a href="https://forms.gle/87dvHGJNAnKHhpMQA" target="_blank" class="btn btn-primary">
+                📩 Přihlásit se
+              </a>
+            </div>
+
+            <div class="collapse mt-3" id="anglictinaDetail">
+              <p><strong>Pro koho je testování určeno</strong></p>
+              <p>
+                Pro každého, kdo se chce v angličtině posouvat – studenty, dospělé i zájemce bez
+                ohledu na úroveň.
+              </p>
+
+              <p><strong>Průběh testování</strong></p>
+              <ol>
+                <li>V daný čas se připojíš na online konferenci a ve dvojici projdeš <strong>moderovanou konverzací v
+                    angličtině</strong> (max. 20 minut).</li>
+                <li>Po hovoru obdržíš <strong>report se zpětnou vazbou od AI</strong> a zpětnovazební dotazník.</li>
+                <li>Vyplníš dotazník se zpětnou vazbou. Na jeho vyplnění budeš mít <strong>3 dny</strong>.
+              </ol>
+
+              <p><strong>Další informace</strong></p>
+              <ul>
+                <li>Kapacita je <strong>10 účastníků + náhradníci</strong>.</li>
+                <li>Účastníky vybíráme podle <strong>pořadí přihlášení a různorodosti testerů</strong>.</li>
+                <li>Konkrétní časy hovorů (celkem 3 pro testera) určujeme na základě kapacit uvedených v&nbsp;přihlášce.
+                </li>
+                <li>Testování je zdarma výměnou za zpětnou vazbu.</li>
+                <li>Budeme rádi, když o testování dáš vědět i svým známým a kamarádům.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="kontakt" class="container py-3">
+    <h2 class="text-center mb-4">📬 Kontakt & Komunita</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title">Chceš vědět víc, máš nějaký dotaz/nápad a nebo se chceš zapojit?</h5>
+            <p class="card-text">
+              Tak nám neváhej napsat na e-mail
+              <a href="mailto:delfini.info@gmail.com" class="fw-bold text-decoration-none text-primary">
+                delfini.info@gmail.com
+              </a>
+              nebo se přidej do naší komunity na
+              <a href="https://discord.gg/kzwu6QXu2X" target="_blank" class="fw-bold text-decoration-none text-primary">
+                Discordu</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS pro změnu textu tlačítka -->
+  <script>
+    document.querySelectorAll('.toggle-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        setTimeout(() => {
+          const expanded = btn.getAttribute('aria-expanded') === 'true';
+          btn.textContent = expanded ? '⬆️ Méně informací' : 'ℹ️ Chci vědět více';
+        }, 200);
+      });
+    });
+  </script>
+
+</body>
+
+</html>
